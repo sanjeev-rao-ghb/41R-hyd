@@ -1,0 +1,64 @@
+.container{
+    width:800px;
+    height: 600px;
+    
+    border: 2px solid;
+    display: flex;
+    
+
+}
+.container-1,.container-3,.container-5{
+
+    
+    width: 20px;
+    height: 250px;
+    background-color: black;
+    margin-left: 50px;
+    margin-top: 150px;
+    border-radius: 20px;
+    animation-duration: 3s;
+       animation-name: k;
+        animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    transition: transform 0.3s ease-in-out;
+     
+
+}
+.container-1,.container-3,.container-5:hover{
+transform: scale(1);
+}
+.container-2,.container-4,.container-6{
+    display: flex;
+    width: 20px;
+    height: 120px;
+    background-color: black;
+    margin-left: 20px;
+    margin-top:200px ;
+    border-radius: 20px;
+    animation-duration: 2s;
+    animation-name: k;
+    animation-delay:  2s;
+     animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    transition: transform 0.3s ease-in-out; 
+}
+.container-2,.container-4,.container-6:hover{
+transform: scale(1);
+}
+
+
+@keyframes k{
+    0%{
+        transform: translateY(0px)scale(1);
+    }
+    50%{
+        transform: translateY(10px)scale(1.5);
+    }
+    75%{
+        transform: translate(0px)scale(0.5);
+    }
+    100%{
+        transform: translate(-10px)scale(1.5);
+    }
+}
