@@ -1,0 +1,33 @@
+.container{
+    border: 2px solid;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+grid-template-rows: repeat(3,200px);
+}
+*>.item{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.item{
+    padding: 10px;
+    align-items: center;
+
+}
+.b{
+     grid-column: 2/4;
+}
+.a{
+    grid-row: 1/4;
+}
+.c{
+    grid-column: 4/5;
+
+}
+.f{
+    grid-row: 2/4;
+    grid-column: 4/5;
+}
+
+
